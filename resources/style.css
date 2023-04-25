@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    font-family: 'Jost', sans-serif;
+}
+header {
+    height: 90px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    background-size: cover;
+    position: relative;
+    border-bottom: 1px solid grey;
+    background-color: white;
+}
+
+header h1 {
+    text-align: left;
+    position: relative;
+    padding-left: 35px;
+    background-color: white;
+}
+
+.web, 
+.light-txt {
+    background-color: white;
+}
+
+.dark-txt {
+    color: rgb(0, 120, 0);
+
+}
+
+.light-txt {
+    color: rgb(0, 185, 0);
+
+}
+
+.web {
+    font-size: 0.5em;
+    font-weight: 200;
+    color: rgb(0,185,0);
+}
+
+.nav {
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    padding-right: 35px;
+    background-color: white;
+    
+}
+
+.nav li {
+    padding: 20px;
+    background-color: white;
+    list-style: none;
+    font-size: large;
+    color: rgb(0, 120, 0);
+}
+
+.barn {
+    background-color: rgba(0, 140, 0, 0.15);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    
+}
+.barn-txt {
+    height:auto;
+    text-align: center;
+    margin-right: 40px;
+    margin-left: 20px;
+}
+
+.barn img {
+    margin: 75px 20px;
+}
+
+.barn-txt h2{
+    padding-bottom: 50px;
+    font-size: xx-large;
+    letter-spacing: 1px;
+    color: rgb(0, 120, 0);
+
+}
+
+.barn-txt p {
+    padding-bottom: 50px;
+    font-weight: 300;
+    color: rgb(0, 120, 0);
+
+}
+
+.barn-txt button {
+    width: 40%;
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid rgb(0, 90, 0);
+    background-color: white;
+    transition: all 0.5s ease-out;
+    color: rgb(0, 120, 0);
+}
+
+.barn-txt button:hover {
+    background-color: rgb(0, 90, 0);
+    color: white;
+    cursor: pointer;
+}
+
+.barn-txt a {
+    text-decoration: none;
+    color: rgb(0, 90, 0);
+
+}
