@@ -85,6 +85,7 @@ header h1 {
     align-items: center;
     width: 100%;
     padding-top: 90px;
+    flex-wrap: wrap;
 }
 
 .barn-txt {
@@ -92,10 +93,23 @@ header h1 {
     text-align: center;
     margin-right: 40px;
     margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px 0;
+}
+
+.barn-img {
+    flex: 1;
+    width: 40%;
+    padding-right: 50px;
+    
 }
 
 .barn img {
     margin: 75px 30px;
+    width: 100%;
+    height: auto;
 }
 
 .barn-txt h2{
@@ -124,6 +138,7 @@ header h1 {
 
 .but {
     letter-spacing: 0.5px;
+    
 }
 
 .but:hover {
@@ -154,10 +169,23 @@ header h1 {
     text-align: center;
     margin-right: 20px;
     margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px 0;
+}
+
+.cartshed-img {
+    flex: 1;
+    width: 40%;
+    padding-right: 60px;
+    
 }
 
 .cartshed img {
     margin: 75px 30px;
+    width: 100%;
+    height: auto;
 }
 
 .cart-txt h2{
@@ -191,4 +219,40 @@ header h1 {
 .cart-txt a {
     text-decoration: none;
     color: rgb(0, 90, 0);
+}
+
+@media only screen and  (max-width: 683px) {
+    .barn,
+    .cartshed {
+        flex-direction: column;
+    }
+
+    .cartshed-img,
+    .barn-img {
+        width: 70%;
+        
+    }
+
+    .barn-txt {
+        width: 80%;
+        padding-bottom: 60px;
+        padding-top: -10px;
+        justify-content: center;
+
+    }
+
+    .cart-txt {
+        width: 80%;
+        padding-top: 60px;
+        padding-bottom: 10px;
+        justify-content: center;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    header {
+        justify-content: center;
+    }
 }
