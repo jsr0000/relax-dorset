@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    font-family: 'Jost', sans-serif;
+    scroll-behavior: smooth;
+}
+header {
+    height: 90px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    background-size: cover;
+    position: fixed;
+    border-bottom: 1px solid grey;
+    background-color: white;
+    width: 100%;
+}
+
+header h1 {
+    text-align: left;
+    position: relative;
+    padding-left: 35px;
+    background-color: white;
+}
+
+.link {
+    text-decoration: none;
+    color: rgb(0, 120, 0);
+    position: relative;
+}
+
+.link:after {
+    content: "";
+    position: absolute;
+    background-color: rgb(0, 120, 0);
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    transition: 0.3s;
+}
+
+.link:hover:after {
+    width: 100%;
+}
+
+.web, 
+.light-txt {
+    background-color: white;
+}
+
+.dark-txt {
+    color: rgb(0, 120, 0);
+}
+
+.light-txt {
+    color: rgb(0, 185, 0);
+}
+
+.web {
+    font-size: 0.5em;
+    font-weight: 200;
+    color: rgb(0,185,0);
+}
+
+.nav {
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    padding-right: 40px;
+    background-color: white;
+}
+
+.nav li {
+    padding: 20px;
+    background-color: white;
+    list-style: none;
+    font-size: large;
+    color: rgb(0, 120, 0);
+}
+
+.barn {
+    background-color: rgba(0, 140, 0, 0.15);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding-top: 90px;
+    
+}
+
+.barn-txt {
+    height:auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px 50px 10px 0;
+}
+
+.barn-img {
+    flex: 1;
+    width: 40%;
+    padding-right: 80px;
+    
+}
+
+.barn img {
+    padding: 60px 40px;
+    width: 100%;
+    height: auto;
+}
+
+.barn-txt h2{
+    padding-bottom: 50px;
+    font-size: xx-large;
+    letter-spacing: 1px;
+    color: rgb(0, 120, 0);
+    font-weight: 900;
+    padding-top: 30px;
+}
+
+.barn-txt p {
+    padding-bottom: 70px;
+    font-weight: 300;
+    color: rgb(0, 120, 0);
+}
+
+.barn-txt button {
+    width: 40%;
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid rgb(0, 90, 0);
+    background-color: white;
+    transition: background-color 0.4s ease-out;
+    color: rgb(0, 120, 0);
+    margin-bottom: 30px;
+}
+
+.but {
+    letter-spacing: 0.5px;
+    width: 100%;
+    
+    
+}
+
+.but:hover {
+    background-color: rgb(0, 90, 0);
+    cursor: pointer;
+}
+
+.but:hover {
+    color: white;
+    font-weight: 600;
+}
+
+.barn-txt a {
+    text-decoration: none;
+    color: rgb(0, 90, 0);
+}
+
+.cartshed {
+    background-color: rgba(0, 140, 0, 0.25);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.cart-txt {
+    height:auto;
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px 0 40px 50px;
+}
+
+.cartshed-img {
+    flex: 1;
+    width: 40%;
+    padding-right: 80px;
+    
+}
+
+.cartshed img {
+    padding: 60px 40px;
+    width: 100%;
+    height: auto;
+}
+
+.cart-txt h2{
+    padding-bottom: 50px;
+    font-size: xx-large;
+    letter-spacing: 1px;
+    color: rgb(0, 120, 0);
+    padding-top: 30px;
+}
+
+.cart-txt p {
+    padding-bottom: 70px;
+    font-weight: 300;
+    color: rgb(0, 120, 0);
+}
+
+.cart-txt button {
+    width: 40%;
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid rgb(0, 90, 0);
+    background-color: white;
+    transition: background-color 0.6s ease-out;
+    color: rgb(0, 120, 0);
+}
+
+.but:hover {
+    background-color: rgb(0, 90, 0);
+    cursor: pointer;
+}
+
+.cart-txt a {
+    text-decoration: none;
+    color: rgb(0, 90, 0);
+}
+
+@media only screen and  (max-width: 683px) {
+    .barn,
+    .cartshed {
+        flex-direction: column;
+    }
+
+    .cartshed-img,
+    .barn-img {
+        width: 70%;
+        padding-bottom: 30px;
+        
+    }
+
+    .barn-txt {
+        width: 80%;
+        padding-bottom: 60px;
+        
+        justify-content: center;
+
+    }
+
+    .cart-txt {
+        width: 80%;
+        padding-top: 60px;
+        padding-bottom: 10px;
+        justify-content: center;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    header {
+        justify-content: center;
+    }
+}
