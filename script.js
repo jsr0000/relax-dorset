@@ -12,7 +12,7 @@ function startSlideshow(slideshowId) {
         images[currentIndex].classList.add('active');
     }
 
-    setInterval(showNextImage, 2300);
+    setInterval(showNextImage, 2500);
 }
 
 window.onload = function () {
