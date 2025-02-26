@@ -3,6 +3,9 @@ function startSlideshow(slideshowId) {
     const images = slideshow.getElementsByTagName('img');
     let currentIndex = 0;
 
+    // Set the first image as active
+    images[currentIndex].classList.add('active');
+
     function showNextImage() {
         images[currentIndex].classList.remove('active');
         currentIndex = (currentIndex + 1) % images.length;
