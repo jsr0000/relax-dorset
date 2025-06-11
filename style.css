@@ -70,9 +70,11 @@ main {
 
 .properties-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     padding: 10px;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .property-card {
@@ -205,8 +207,24 @@ footer a:hover {
     }
 }
 
+@media (max-width: 1150px) {
+    .properties-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .property-card:first-child {
+        grid-column: 1 / -1;
+    }
+}
+
 @media (max-width: 850px) {
     .properties-grid {
         grid-template-columns: 1fr;
     }
+}
+
+.bottom-row {
+    display: none;
 }
