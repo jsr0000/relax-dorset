@@ -18,4 +18,5 @@ function startSlideshow(slideshowId) {
 window.onload = function () {
     startSlideshow('slideshow1');
     startSlideshow('slideshow2');
+    startSlideshow('slideshow3');
 };
