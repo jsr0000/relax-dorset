@@ -9,17 +9,6 @@ Thumbs.db
 # Dependencies
 node_modules/
 
-# Media files
-*.mp4
-*.mov
-*.mp3
-*.wav
-*.jpg
-*.jpeg
-*.png
-*.gif
-*.ico
-
 # Log files
 *.log
 .vercel
