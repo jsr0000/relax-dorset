@@ -414,7 +414,7 @@ body {
 }
 
 .footer-social {
-    margin-bottom: 2.5rem;
+    margin-bottom: 0;
 }
 
 .social-icon {
@@ -426,12 +426,6 @@ body {
 
 .social-icon:hover {
     opacity: 1;
-}
-
-.footer-copy {
-    font-size: 0.75rem;
-    opacity: 0.3;
-    letter-spacing: 0.03em;
 }
 
 
