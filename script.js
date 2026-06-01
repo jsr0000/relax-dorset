@@ -44,7 +44,7 @@
 
         function resetInterval() {
             clearInterval(interval);
-            interval = setInterval(next, 4500);
+            interval = setInterval(next, 2000);
         }
 
         // Pause on hover

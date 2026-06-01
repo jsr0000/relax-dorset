@@ -55,7 +55,7 @@ body {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background-image: url('imgs/barn/barn.jpeg');
+    background-image: url('imgs/barn/sunnybarn.png');
     background-size: cover;
     background-position: center 35%;
 }
@@ -232,7 +232,7 @@ body {
     height: 100%;
     object-fit: cover;
     opacity: 0;
-    transition: opacity 1.2s var(--ease-in-out);
+    transition: opacity 0.4s var(--ease-in-out);
     will-change: opacity, transform;
 }
 
@@ -493,7 +493,7 @@ body {
 
 @media (max-width: 768px) {
     .hero {
-        background-image: url('imgs/barn/barn.jpeg');
+        background-image: url('imgs/barn/sunnybarn.png');
         background-position: center 30%;
         min-height: 500px;
     }
